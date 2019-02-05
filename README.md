@@ -31,5 +31,17 @@ I was able to generate 6M records in an hour, it can also insert 10M records but
 I think there is some issues with mongo connection opening and close where if i can tune it, it might reduce insertion time but i am leaving as it is since I just wanted to test as it was given 
 
 
+##### 02/04/2019 
+currently working on refactoring code from using mongodb to mySQL
+database schema has been changed and created two seperate table since other DB has nested json object 
+working on re-write API endpoint to server data to react 
+
+mysql> SET GLOBAL max_allowed_packet=1073741824;
+
+the challenge was schema design where we have nested json object in mongo since relational DB doesn't support that i was earlier doing join with two seperate tables but that create another challenge about how i can merge two table's data into single API without refactoring too much client code.
+then talking to Joe (who developed this component) and give me some valuable informatino about how those nested strcture utilizing in to code, so i redesign schema and put all into single table with very little re-factor on react i was able to achieve same application output with mongo. 
+
+Next step to create fake data with faker and generate 10m records, i have attached scripted that i used to generate almost 11m records in 7min and 44sec with for loop that push into array and knex inserted those data into mySQL and on top of it running bash script to run this process multiple times.
+
 
 
