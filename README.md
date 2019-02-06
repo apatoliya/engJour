@@ -44,7 +44,7 @@ then talking to Joe (who developed this component) and give me some valuable inf
 Next step to create fake data with faker and generate 10m records, i have attached scripted that i used to generate almost 11m records in 7min and 44sec with for loop that push into array and knex inserted those data into mySQL and on top of it running bash script to run this process multiple times.
 
 
-##### 02/05/2010 #######################
+##### 02/05/2019 #######################
 
 i have started working with cassandra for NoSQL database for schedule component, initial repo setup, installation of cassandra was little tricky since you have to install out side of node, i downloaded .tar.gz binary for macos, and install locally on my machine.
 
