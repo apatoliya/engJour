@@ -59,3 +59,15 @@ created keyspace and table, then created seed script for insertation of data.
 modify express API routes and app finally working as expected.
 
 
+####### 02/07/2019
+
+Now next step is to generete 10m records in cassandra for benchmarking.
+cassandra is little stangant about schema and how you insert records into DB, initially i was researching about dsbulk tool (datastax bulk loader) to insert bulk load of data but couldn't find much documentation on it.
+next thing i found you can also import data through JSON or CSV format as batch loading 
+the question was how we can generate programatically 10m records of CSV data, there are some tools available to generate csv file along with faker that can generate format you want.
+i was just using bash scripting along with VI editor to generate 10m records into CSV and the COPY command to insert in to cassandra DB
+ # cqlsh> copy faker.fakertable  from 'export.csv' with header=true;
+
+it loading 10m records in 3min 54 sec. 
+
+i still have to figure it out to automate every process.
