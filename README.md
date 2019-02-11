@@ -71,3 +71,16 @@ i was just using bash scripting along with VI editor to generate 10m records int
 it loading 10m records in 3min 54 sec. 
 
 i still have to figure it out to automate every process.
+
+##### 02/11/2019 ########
+finally i was able to figure it out how i can automate the entire process that generate CSV file and insert into cassandra.
+The way i did it in specific steps 
+1) create fake db schema files and import in cassandra 
+2) create headers ( that includes all schema headers) and write in CSV file 
+3) create 1m records using faker and append the csv file 
+4) using COPY command to insert that csv file into cassandra 
+
+i have to run 10 times that genereate 10m records and append into csv file - i used bash scripting for it 
+so entire single command looks like this 
+#date && node --max-old-space-size=25000 test.js && for i in `seq 1 10`;do node --max-old-space-size=29000 test1.js ;done && cqlsh < test2.js && date 
+and it took around 22min and 26sec to run this 
