@@ -84,3 +84,10 @@ i have to run 10 times that genereate 10m records and append into csv file - i u
 so entire single command looks like this 
 #date && node --max-old-space-size=25000 test.js && for i in `seq 1 10`;do node --max-old-space-size=29000 test1.js ;done && cqlsh < test2.js && date 
 and it took around 22min and 26sec to run this 
+
+### 02/13/2019#####
+today i tried another database postgres though it's kind of same as mysql i wanted to try out and see how it perform.
+initially created same schedule as mysql,created db and table and insert sample data into db.
+also changed on express how it's fetching data from postgres and it's working fine with postgres 
+
+next challenge was to insert 10m records and i am still working on it 
