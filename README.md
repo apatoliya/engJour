@@ -3,7 +3,7 @@ initially clone the schedule repo clone to laptop.
 
 earlier database was connected mongo db atlas since for this project we working with mostly local database rather then any managed services i changed from online version to local mongodb.
 
-##02/02/2019
+# 02/02/2019
 
 date && node --stack_size=8192 --max-old-space-size=8192 fakerData.js && date
 
@@ -31,7 +31,7 @@ I was able to generate 6M records in an hour, it can also insert 10M records but
 I think there is some issues with mongo connection opening and close where if i can tune it, it might reduce insertion time but i am leaving as it is since I just wanted to test as it was given 
 
 
-##02/04/2019 
+# 02/04/2019 
 
 currently working on refactoring code from using mongodb to mySQL
 database schema has been changed and created two seperate table since other DB has nested json object 
@@ -49,7 +49,7 @@ from mysql : select * from fakertable order by RAND() limit 1;   - it took aroun
 select * from fakertable where id=54520;  - search specific records took around 7s ( it took longer becuase there were 400000 records matching with same id )
 
 
-#02/05/2019 
+# 02/05/2019 
 
 i have started working with cassandra for NoSQL database for schedule component, initial repo setup, installation of cassandra was little tricky since you have to install out side of node, i downloaded .tar.gz binary for macos, and install locally on my machine.
 
@@ -60,7 +60,7 @@ created keyspace and table, then created seed script for insertation of data.
 modify express API routes and app finally working as expected.
 
 
-#02/07/2019
+# 02/07/2019
 
 Now next step is to generete 10m records in cassandra for benchmarking.
 cassandra is little stangant about schema and how you insert records into DB, initially i was researching about dsbulk tool (datastax bulk loader) to insert bulk load of data but couldn't find much documentation on it.
@@ -74,7 +74,7 @@ it loading 10m records in 3min 54 sec.
 
 i still have to figure it out to automate every process.
 
-#02/11/2019 
+# 02/11/2019 
 
 finally i was able to figure it out how i can automate the entire process that generate CSV file and insert into cassandra.
 The way i did it in specific steps 
@@ -90,7 +90,7 @@ so entire single command looks like this.
      
 and it took around 22min and 26sec to run this 
 
-#02/13/2019
+# 02/13/2019
 
 today i tried another database postgres though it's kind of same as mysql i wanted to try out and see how it perform.
 initially created same schedule as mysql,created db and table and insert sample data into db.
@@ -98,7 +98,7 @@ also changed on express how it's fetching data from postgres and it's working fi
 
 next challenge was to insert 10m records and i am still working on it 
 
-#02/16/2019
+# 02/16/2019
 
 today i run some performance test on deployed version of my component services on EC2 where i have client and database on same instance. 
 i used loader.io to run some benchmarking for RPS 
