@@ -91,3 +91,8 @@ initially created same schedule as mysql,created db and table and insert sample 
 also changed on express how it's fetching data from postgres and it's working fine with postgres 
 
 next challenge was to insert 10m records and i am still working on it 
+### 02/16/2019#####
+today i run some performance test on deployed version of my component services on EC2 where i have client and database on same instance. 
+i used loader.io to run some benchmarking for RPS 
+just for my service i got right balance for 2500 clients per minuute with 8ms latency and almost 0% error rate.
+there are also few test i have done with 100, 1k, 2k clients.
