@@ -96,3 +96,6 @@ today i run some performance test on deployed version of my component services o
 i used loader.io to run some benchmarking for RPS 
 just for my service i got right balance for 2500 clients per minuute with 8ms latency and almost 0% error rate.
 there are also few test i have done with 100, 1k, 2k clients.
+
+###250 clients per minute ##
+![image](https://user-images.githubusercontent.com/12757041/52917341-d5d9d800-32af-11e9-9175-ecfd367025f6.png)
