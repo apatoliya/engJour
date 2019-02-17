@@ -104,3 +104,6 @@ there are also few test i have done with 100, 1k, 2k clients.
 
     1k clients per minute 
 ![image](https://user-images.githubusercontent.com/12757041/52917385-5b5d8800-32b0-11e9-9d2a-177031c403d6.png)
+
+    2k clients per minute 
+![image](https://user-images.githubusercontent.com/12757041/52917438-23a31000-32b1-11e9-8d53-07ee283a6672.png)
