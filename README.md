@@ -59,7 +59,7 @@ created keyspace and table, then created seed script for insertation of data.
 modify express API routes and app finally working as expected.
 
 
-####### 02/07/2019
+###### 02/07/2019
 
 Now next step is to generete 10m records in cassandra for benchmarking.
 cassandra is little stangant about schema and how you insert records into DB, initially i was researching about dsbulk tool (datastax bulk loader) to insert bulk load of data but couldn't find much documentation on it.
@@ -85,20 +85,22 @@ so entire single command looks like this
 #date && node --max-old-space-size=25000 test.js && for i in `seq 1 10`;do node --max-old-space-size=29000 test1.js ;done && cqlsh < test2.js && date 
 and it took around 22min and 26sec to run this 
 
-### 02/13/2019#####
+##### 02/13/2019#####
 today i tried another database postgres though it's kind of same as mysql i wanted to try out and see how it perform.
 initially created same schedule as mysql,created db and table and insert sample data into db.
 also changed on express how it's fetching data from postgres and it's working fine with postgres 
 
 next challenge was to insert 10m records and i am still working on it 
-### 02/16/2019#####
+
+##### 02/16/2019#####
+
 today i run some performance test on deployed version of my component services on EC2 where i have client and database on same instance. 
 i used loader.io to run some benchmarking for RPS 
 just for my service i got right balance for 2500 clients per minuute with 8ms latency and almost 0% error rate.
 there are also few test i have done with 100, 1k, 2k clients.
 
-###250 clients per minute ##
+    250 clients per minute 
 ![image](https://user-images.githubusercontent.com/12757041/52917341-d5d9d800-32af-11e9-9175-ecfd367025f6.png)
 
-  1k clients per minute 
+    1k clients per minute 
 ![image](https://user-images.githubusercontent.com/12757041/52917385-5b5d8800-32b0-11e9-9d2a-177031c403d6.png)
