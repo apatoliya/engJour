@@ -3,7 +3,7 @@ initially clone the schedule repo clone to laptop.
 
 earlier database was connected mongo db atlas since for this project we working with mostly local database rather then any managed services i changed from online version to local mongodb.
 
-###########################02/02/2019########################
+##02/02/2019
 
 date && node --stack_size=8192 --max-old-space-size=8192 fakerData.js && date
 
@@ -31,7 +31,7 @@ I was able to generate 6M records in an hour, it can also insert 10M records but
 I think there is some issues with mongo connection opening and close where if i can tune it, it might reduce insertion time but i am leaving as it is since I just wanted to test as it was given 
 
 
-# 02/04/2019 
+##02/04/2019 
 
 currently working on refactoring code from using mongodb to mySQL
 database schema has been changed and created two seperate table since other DB has nested json object 
