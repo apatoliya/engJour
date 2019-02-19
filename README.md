@@ -120,3 +120,9 @@ there are also few test i have done with 100, 1k, 2k clients.
     2.5k clients per minute 
 ![image](https://user-images.githubusercontent.com/12757041/52917529-2e11d980-32b2-11e9-8151-9af9259d7f8b.png)
 
+## 02/19/2019
+i have deployed today separate client and mysql DB instances in AWS.
+the process was smooth only challange i face during configuration of making DB connection from client where you have to connect using their public IP.
+there was another issues that you can't connected directly to mySQL root account from remote machine so i have create separate user for that.
+and also make sure security groups allow permission from client to mySQL DB instance on port 3306 
+
