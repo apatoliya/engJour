@@ -132,3 +132,8 @@ took around 1 hour and 30min to run on mysql
 after few tweeks and tunning i was able to insert 10m records in 36min 
 things i have change is increase storage disk space + also added provision IOPS disk instead of general purpose 
 
+        newrelic dashboard for service running locally 
+        
+![image](https://user-images.githubusercontent.com/12757041/53200456-31c19b00-35e7-11e9-8654-808d5515410b.png)
+
+
