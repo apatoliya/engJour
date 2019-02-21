@@ -126,3 +126,9 @@ the process was smooth only challange i face during configuration of making DB c
 there was another issues that you can't connected directly to mySQL root account from remote machine so i have create separate user for that.
 and also make sure security groups allow permission from client to mySQL DB instance on port 3306 
 
+## 02/20/2019
+Today i run some benchmarking on deployed version in EC2 and tried to insert 10m records but it was too slow 
+took around 1 hour and 30min to run on mysql 
+after few tweeks and tunning i was able to insert 10m records in 36min 
+things i have change is increase storage disk space + also added provision IOPS disk instead of general purpose 
+
