@@ -147,4 +147,8 @@ i have to create AMI ( amazon machine image ) for my service component and creat
 Initially i started with 2 instances where also desired capacity also 2 instances so anytime 2 instances will be running.
 then i started doing loaderio test for my serivces 
 
+        2.5k client per minute 
+ ![image](https://user-images.githubusercontent.com/12757041/53303424-c3234e00-382f-11e9-9de3-53bb314776a1.png)
+
+
 
