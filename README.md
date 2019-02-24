@@ -154,5 +154,5 @@ as you can see response time is drastically reduced from using single instance t
         
         3k clients per minute
         
-
+![image](https://user-images.githubusercontent.com/12757041/53303469-362cc480-3830-11e9-8187-0543c837e9a4.png)
 
