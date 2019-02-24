@@ -139,5 +139,12 @@ things i have change is increase storage disk space + also added provision IOPS 
         artillery test for service running locally 
 ![image](https://user-images.githubusercontent.com/12757041/53200593-86651600-35e7-11e9-9f92-25fc1cbb4f68.png)
 
+##02/23/2019
+Today i have setup ELB ( elastic load balancer) in AWS where it's serve traffic for my service component 
+that's been part of launch confiugration and auto scalling group in AWS
+i have been using ELB in past so configuration and setup was easy.
+i have to create AMI ( amazon machine image ) for my service component and create LC using that AMI and also confiure ASG using that LC.
+Initially i started with 2 instances where also desired capacity also 2 instances so anytime 2 instances will be running.
+then i started doing loaderio test for my serivces 
 
 
