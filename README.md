@@ -150,5 +150,9 @@ then i started doing loaderio test for my serivces
         2.5k client per minute 
  ![image](https://user-images.githubusercontent.com/12757041/53303424-c3234e00-382f-11e9-9de3-53bb314776a1.png)
 
+as you can see response time is drastically reduced from using single instance to ELB + 2 instances ( 8ms to 3ms) 
+        
+        3k clients per minute
+        
 
 
