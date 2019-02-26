@@ -159,3 +159,9 @@ as you can see response time is drastically reduced from using single instance t
         4.5k clients per minute 
  ![image](https://user-images.githubusercontent.com/12757041/53303486-61171880-3830-11e9-812f-d63783685c65.png)
 
+##02/25/2019
+today i tried to dockerize my services, for that i have to have either use two different docker images, one for mysql and one for client or either use docker compose 
+initially i tried to dockerize mysql first, there are default mysql image available on dockerhub so i used that to deploy mysql.
+then i have to create SQL insertion script that run along with dockerfile so that i can insert those data, once i have script ready and tested,
+         docker build -t mysql-docker .
+         docker run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=password --name mysql-docker mysql-docker
